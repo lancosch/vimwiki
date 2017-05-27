@@ -716,9 +716,9 @@ function! s:close_tag_table(table, ldest, header_ids) "{{{
     call s:sum_colspan(table)
 
     if table[0] ==# 'center'
-      call add(ldest, "<table class='center'>")
+      call add(ldest, "<table class='center table table-condensed table-hover table-bordered table-striped'>")
     else
-      call add(ldest, "<table>")
+      call add(ldest, "<table class='table table-condensed table-hover table-bordered table-striped'>")
     endif
 
     " Empty lists are table separators.
